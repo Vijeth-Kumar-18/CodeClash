@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentors - ProjectHub</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1b2f;
+            color: #e6e6e6;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #162447;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #e6e6e6;
+            transition: color 0.3s;
+        }
+
+        header h1:hover {
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e6e6e6;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Mentors Section */
+        .mentors {
+            padding: 50px 20px;
+        }
+
+        .mentors h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        .mentor-card {
+            background: #0f3460;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mentor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .mentor-card img {
+            max-width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .mentor-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+
+        .mentor-card p {
+            font-size: 1rem;
+        }
+
+        .mentor-card button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .mentor-card button:hover {
+            background-color: #e6b800;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #162447;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ProjectHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mentors Section[_{{{CITATION{{{_1{](https://github.com/DISCOVERABLE/DISCOVERABEL/tree/0a02709eb213ee428e3cf40ed1da372c6095dab8/people_list.php)[_{{{CITATION{{{_2{](https://github.com/Dishant2001/algorhythm/tree/79093f9f090d8b6b9592478daf634bdde09196a7/students.php)
+         <!-- Mentors Section -->
+    <section class="mentors">
+        <h2>Our Mentors</h2>
+        <div class="mentor-card">
+            <img src="https://source.unsplash.com/400x300/?developer" alt="John Doe">
+            <h3>John Doe</h3>
+            <p>Expert in Web Development with 10+ years of experience in building scalable web applications. Specializes in React, Node.js, and MongoDB.</p>
+            <button>Connect</button>
+        </div>
+        <div class="mentor-card">
+            <img src="https://source.unsplash.com/400x300/?data-scientist" alt="Jane Smith">
+            <h3>Jane Smith</h3>
+            <p>Seasoned Data Scientist with a passion for machine learning and artificial intelligence. Experienced in Python, R, and TensorFlow.</p>
+            <button>Connect</button>
+        </div>
+        <!-- Add more mentor cards as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ProjectHub. Built with passion for creators and innovators. <a href="#">Learn More</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to add dynamic hover effects and interactions
+        const mentorCards = document.querySelectorAll('.mentor-card');
+
+        mentorCards.forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.4)';
+            });
+
+            card.addEventListener('mouseout', () => {
+                card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            });
+        });
+    </script>
+</body>
+</html>

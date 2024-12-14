@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - ProjectHub</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1b2f;
+            color: #e6e6e6;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #162447;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #e6e6e6;
+            transition: color 0.3s;
+        }
+
+        header h1:hover {
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e6e6e6;
+            font-weight: bold;
+           [_{{{CITATION{{{_1{](https://github.com/antydemant/lessons-2020/tree/0c6095f45bfd841914ac8e7e25f8c9df273dea69/02-closure-and-context%2Fhomework%2FREADME.md)[_{{{CITATION{{{_2{](https://github.com/DISCOVERABLE/DISCOVERABEL/tree/0a02709eb213ee428e3cf40ed1da372c6095dab8/people_list.php)[_{{{CITATION{{{_3{](https://github.com/the1abel/cs431/tree/9d63d7b00da329b8e0316a27228258c940b9b480/web%2Fproject1%2Fprojects%2Findex.php)
+            
+           }
+            
+            nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px 20px;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        .project-card {
+            background: #0f3460;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+        }
+
+        .project-card button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .project-card button:hover {
+            background-color: #e6b800;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #162447;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ProjectHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Project Showcase</h2>
+        <div class="project-card">
+            <img src="https://source.unsplash.com/400x300/?weather" alt="Weather App">
+            <h3>Weather App</h3>
+            <p>An interactive weather app that provides real-time weather updates and forecasts for any location. Built using HTML, CSS, and JavaScript.</p>
+            <button>View More</button>
+        </div>
+        <div class="project-card">
+            <img src="https://source.unsplash.com/400x300/?blog" alt="Personal Blog">
+            <h3>Personal Blog</h3>
+            <p>A personal blog platform where users can share their thoughts and experiences. Built with HTML, CSS, and a back-end framework like Node.js.</p>
+            <button>View More</button>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ProjectHub. Built with passion for creators and innovators. <a href="#">Learn More</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to add dynamic hover effects and interactions
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectCards.forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.4)';
+            });
+
+            card.addEventListener('mouseout', () => {
+                card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            });
+        });
+    </script>
+</body>
+</html>

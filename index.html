@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectHub - Showcase and Connect</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1b2f;
+            color: #e6e6e6;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #162447;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #e6e6e6;
+            transition: color 0.3s;
+        }
+
+        header h1:hover {
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e6e6e6;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,code') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            box-shadow: inset 0 0 10px #000000;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        .hero button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #e6b800;
+            transform: scale(1.1);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+        }
+
+        .feature {
+            background: #0f3460;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: calc(33.333% - 20px);
+            text-align: center;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: # ffcc00;
+        }
+
+        .feature p {
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #162447;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ProjectHub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Showcase Your Projects. Connect with Mentors.</h2>
+        <p>A platform to share your work, learn from experts, and grow professionally.</p>
+        <button onclick="location.href='projects.html'">Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature">
+            <img src="https://source.unsplash.com/400x300/?project" alt="Projects">
+            <h3>Upload Your Projects</h3>
+            <p>Easily showcase your projects and share them with the world.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/400x300/?mentor" alt="Mentors">
+            <h3>Connect with Mentors</h3>
+            <p>Engage with experts in your field for guidance and feedback.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/400x300/?community" alt="Community">
+            <h3>Join the Community</h3>
+            <p>Collaborate with peers and grow your professional network.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/400x300/?learning" alt="Learning">
+            <h3>Learn New Skills</h3>
+            <p>Access resources and tutorials to enhance your knowledge.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/400x300/?innovation" alt="Innovation">
+            <h3>Innovate Together</h3>
+            <p>Work on projects that push the boundaries of technology.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/400x300/?networking" alt="Networking">
+            <h3>Expand Your Network</h3>
+            <p>Meet like-minded individuals and build lasting connections.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ProjectHub. Built with passion for creators and innovators. <a href="#">Learn More</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to add dynamic hover effects and interactions
+        const features = document.querySelectorAll('.feature');
+
+        features.forEach(feature => {
+            feature.addEventListener('mouseover', () => {
+                feature.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.4)';
+            });
+
+            feature.addEventListener('mouseout', () => {
+                feature.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            });
+        });
+    </script>
+</body>
+</html>
+
